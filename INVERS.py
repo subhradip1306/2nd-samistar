@@ -29,11 +29,8 @@ def a(x):
 def l(x):
     return list(x)
 
-def c(x):
-    return [int(x[0]), int(x[1]), int(x[2])]
-
 def e(A,i,n,j):
-    return c(a(MATRIX[i])-n*a(MATRIX[j]))
+    return l(a(MATRIX[i])-n*a(MATRIX[j]))
 
 def p(A,i,j):
     A[i]=l(a(A[i])-a(A[j]))
@@ -136,8 +133,8 @@ if check==1:
 else:
     
     for j in range(len(MATRIX)):
-        MATRIX[j]=c(a(MATRIX[j])/MATRIX[j][j])
-        I[j]=c(a(I[j])/MATRIX[j][j])
+        MATRIX[j]=l(a(MATRIX[j])/MATRIX[j][j])
+        I[j]=l(a(I[j])/MATRIX[j][j])
     
     if MATRIX[1][2] != 0:
             
@@ -157,6 +154,5 @@ else:
             MATRIX[0]=e(MATRIX,0,m,1)
             I[0]=e(I,0,m,1)
             
-
-print('\n' ,MATRIX[0], MATRIX[1], MATRIX[2], sep='\n')
-print('\n', I[0], I[1], I[2], sep='\n')
+    print('\n' ,MATRIX[0], MATRIX[1], MATRIX[2], sep='\n')
+    print('\n', I[0], I[1], I[2], sep='\n')
