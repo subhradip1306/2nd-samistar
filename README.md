@@ -1,4 +1,4 @@
-# 2nd-samistar
+# 2nd samistar
 
 ### Projects made during 2nd semester at IISER-K
 
